@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mohammed Alsharef | Portfolio</title>
+  <meta name="description" content="Mohammed Alsharef – Software Engineer & AI specialist. Portfolio showcasing projects in AI, Computer Vision, and Data Systems." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ──────────────────────── NAVBAR ──────────────────────── -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <span class="nav-logo">M<span class="accent">.</span>A</span>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero"      data-en="Home"           data-ar="الرئيسية">Home</a></li>
+        <li><a href="#about"     data-en="About"          data-ar="عني">About</a></li>
+        <li><a href="#experience"data-en="Experience"     data-ar="الخبرة">Experience</a></li>
+        <li><a href="#projects"  data-en="Projects"       data-ar="المشاريع">Projects</a></li>
+        <li><a href="#skills"    data-en="Skills"         data-ar="المهارات">Skills</a></li>
+        <li><a href="#contact"   data-en="Contact"        data-ar="تواصل">Contact</a></li>
+      </ul>
+      <button class="lang-btn" id="langBtn" onclick="toggleLang()" aria-label="Toggle Language">
+        <span class="lang-icon">🌐</span>
+        <span id="langLabel">عربي</span>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ──────────────────────── HERO ──────────────────────── -->
+  <section class="hero" id="hero">
+    <div class="particles" id="particles"></div>
+    <div class="hero-content">
+      <div class="hero-badge" data-en="Available for Opportunities" data-ar="متاح للفرص">Available for Opportunities</div>
+      <h1 class="hero-name">Mohammed <span class="gradient-text">Alsharef</span></h1>
+      <p class="hero-title" id="typedTitle"></p>
+      <p class="hero-summary" data-en="Computer Science graduate specializing in AI and software engineering, with a focus on building scalable, data-driven systems. Experienced in the full development lifecycle from problem analysis to deployment." data-ar="خريج علوم الحاسب متخصص في الذكاء الاصطناعي وهندسة البرمجيات، مع تركيز على بناء أنظمة قابلة للتوسع تعتمد على البيانات. مُلمٌّ بدورة التطوير الكاملة من تحليل المشكلة إلى النشر.">
+        Computer Science graduate specializing in AI and software engineering, with a focus on building scalable, data-driven systems. Experienced in the full development lifecycle from problem analysis to deployment.
+      </p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn btn-primary" data-en="View Projects" data-ar="اكتشف المشاريع">View Projects</a>
+        <a href="#contact"  class="btn btn-outline" data-en="Get In Touch"  data-ar="تواصل معي">Get In Touch</a>
+      </div>
+      <div class="hero-social">
+        <a href="mailto:alsharef372@gmail.com" class="social-link" title="Email" aria-label="Email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+        </a>
+        <a href="https://linkedin.com/in/msalsharef" target="_blank" class="social-link" title="LinkedIn" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+        <a href="tel:+966531821811" class="social-link" title="Phone" aria-label="Phone">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.38 2 2 0 0 1 3.6 1.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.37a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <div class="scroll-dot"></div>
+    </div>
+  </section>
+
+  <!-- ──────────────────────── ABOUT ──────────────────────── -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-en="Who I Am" data-ar="من أنا">Who I Am</span>
+        <h2 class="section-title" data-en="About Me" data-ar="عني">About Me</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-avatar-wrap">
+          <div class="about-avatar">
+            <span class="avatar-initials">MA</span>
+            <div class="avatar-ring"></div>
+          </div>
+          <div class="about-stats">
+            <div class="stat-card">
+              <span class="stat-num">3.68</span>
+              <span class="stat-label" data-en="GPA / 4.0" data-ar="المعدل / 4.0">GPA / 4.0</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-num">5+</span>
+              <span class="stat-label" data-en="Projects" data-ar="مشاريع">Projects</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-num">6mo</span>
+              <span class="stat-label" data-en="Experience" data-ar="خبرة">Experience</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-text">
+          <p data-en="I'm Mohammed Alsharef, a Computer Science graduate from Umm Al-Qura University (GPA 3.68/4.0, June 2026), passionate about building intelligent systems that solve real-world problems." data-ar="أنا محمد الشريف، خريج علوم الحاسب من جامعة أم القرى (المعدل 3.68/4.0، يونيو 2026)، شغوف ببناء أنظمة ذكية تحل مشاكل العالم الحقيقي.">
+            I'm Mohammed Alsharef, a Computer Science graduate from Umm Al-Qura University (GPA 3.68/4.0, June 2026), passionate about building intelligent systems that solve real-world problems.
+          </p>
+          <p data-en="My work spans AI, machine learning, computer vision, and full-stack development. I've had the privilege of working on award-winning projects and contributing to impactful platforms at organizations like KFSH&RC and KnowledgeX." data-ar="يمتد عملي عبر الذكاء الاصطناعي وتعلم الآلة ورؤية الحاسب والتطوير الشامل. حظيت بشرف العمل على مشاريع حائزة على جوائز والمساهمة في منصات مؤثرة في منظمات مثل مستشفى الملك فيصل التخصصي وKnowledgeX.">
+            My work spans AI, machine learning, computer vision, and full-stack development. I've had the privilege of working on award-winning projects and contributing to impactful platforms at organizations like KFSH&RC and KnowledgeX.
+          </p>
+          <div class="education-card">
+            <div class="edu-icon">🎓</div>
+            <div class="edu-info">
+              <h3 data-en="Bachelor of Computer Science" data-ar="بكالوريوس علوم الحاسب">Bachelor of Computer Science</h3>
+              <p data-en="Umm Al-Qura University · GPA 3.68/4.0 · June 2026" data-ar="جامعة أم القرى · المعدل 3.68/4.0 · يونيو 2026">Umm Al-Qura University · GPA 3.68/4.0 · June 2026</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ──────────────────────── EXPERIENCE ──────────────────────── -->
+  <section class="section section-dark" id="experience">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-en="Work History" data-ar="السجل الوظيفي">Work History</span>
+        <h2 class="section-title" data-en="Experience" data-ar="الخبرة">Experience</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="job-title" data-en="Software Engineer – Intern" data-ar="مهندس برمجيات – متدرب">Software Engineer – Intern</h3>
+                <span class="job-company">KnowledgeX.sa</span>
+              </div>
+              <span class="job-date" data-en="Mar 2025 – Aug 2025" data-ar="مارس 2025 – أغسطس 2025">Mar 2025 – Aug 2025</span>
+            </div>
+            <ul class="job-list">
+              <li data-en="Developed an AI-powered idea evaluation system to assess startup potential from pitch decks." data-ar="طوّرت نظام تقييم أفكار مدعوم بالذكاء الاصطناعي لتقييم إمكانات الشركات الناشئة من خلال عروض الأعمال.">Developed an AI-powered idea evaluation system to assess startup potential from pitch decks.</li>
+              <li data-en="Integrated LLMs (OpenAI, Claude) for user input processing and predictive scoring." data-ar="دمجت نماذج اللغة الكبيرة (OpenAI وClaude) لمعالجة مدخلات المستخدم والتسجيل التنبؤي.">Integrated LLMs (OpenAI, Claude) for user input processing and predictive scoring.</li>
+              <li data-en="Collaborated in Agile teams to translate business requirements into software features." data-ar="تعاونت ضمن فرق Agile لترجمة متطلبات الأعمال إلى ميزات برمجية.">Collaborated in Agile teams to translate business requirements into software features.</li>
+              <li data-en="Engaged directly with clients and stakeholders to align technical solutions with business goals." data-ar="تواصلت مباشرة مع العملاء وأصحاب المصلحة لمواءمة الحلول التقنية مع أهداف العمل.">Engaged directly with clients and stakeholders to align technical solutions with business goals.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ──────────────────────── PROJECTS ──────────────────────── -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-en="What I've Built" data-ar="ما بنيته">What I've Built</span>
+        <h2 class="section-title" data-en="Projects" data-ar="المشاريع">Projects</h2>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card reveal" id="proj-artfraud">
+          <div class="project-glow"></div>
+          <div class="project-top">
+            <div class="project-emoji">🎨</div>
+            <div class="project-badges">
+              <span class="badge badge-award" data-en="NCA Award" data-ar="جائزة NCA">NCA Award</span>
+              <span class="badge badge-award" data-en="Ibdaa Award" data-ar="جائزة إبداع">Ibdaa Award</span>
+            </div>
+          </div>
+          <h3 data-en="Art Fraud Detection" data-ar="كشف تزوير الأعمال الفنية">Art Fraud Detection</h3>
+          <p data-en="ML system to detect counterfeit artworks using forensic algorithms and computer vision. Awarded by NCA and Ibdaa." data-ar="نظام تعلم آلي للكشف عن الأعمال الفنية المزيفة باستخدام خوارزميات الطب الشرعي ورؤية الحاسب. حائز على جائزتي NCA وإبداع.">
+            ML system to detect counterfeit artworks using forensic algorithms and computer vision. Awarded by NCA and Ibdaa.
+          </p>
+          <div class="project-tags">
+            <span>Python</span><span>Computer Vision</span><span>ML</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal" id="proj-rasid">
+          <div class="project-glow"></div>
+          <div class="project-top">
+            <div class="project-emoji">🧬</div>
+            <div class="project-badges">
+              <span class="badge badge-org">KFSH&amp;RC</span>
+            </div>
+          </div>
+          <h3 data-en="RASID Platform" data-ar="منصة رصد">RASID Platform</h3>
+          <p data-en="Genomic surveillance platform integrating NCBI genomic data with interactive heatmaps; optimized DNA sequence (.fasta) pipelines." data-ar="منصة مراقبة جينومية تدمج بيانات NCBI الجينومية مع خرائط حرارية تفاعلية؛ محسّن لخطوط أنابيب تسلسلات DNA (.fasta).">
+            Genomic surveillance platform integrating NCBI genomic data with interactive heatmaps; optimized DNA sequence (.fasta) pipelines.
+          </p>
+          <div class="project-tags">
+            <span>Python</span><span>Bioinformatics</span><span>Data Viz</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal" id="proj-mawsem">
+          <div class="project-glow"></div>
+          <div class="project-top">
+            <div class="project-emoji">📈</div>
+            <div class="project-badges">
+              <span class="badge badge-grad" data-en="Graduation Project" data-ar="مشروع التخرج">Graduation Project</span>
+            </div>
+          </div>
+          <h3 data-en="MAWSEM" data-ar="موسم">MAWSEM</h3>
+          <p data-en="AI-powered seasonal demand forecasting system to optimize inventory through automated data scraping and predictive modeling." data-ar="نظام تنبؤ بالطلب الموسمي مدعوم بالذكاء الاصطناعي لتحسين المخزون من خلال جمع البيانات الآلي والنمذجة التنبؤية.">
+            AI-powered seasonal demand forecasting system to optimize inventory through automated data scraping and predictive modeling.
+          </p>
+          <div class="project-tags">
+            <span>Python</span><span>Forecasting</span><span>Data Scraping</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ──────────────────────── SKILLS ──────────────────────── -->
+  <section class="section section-dark" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-en="What I Know" data-ar="ما أعرفه">What I Know</span>
+        <h2 class="section-title" data-en="Skills" data-ar="المهارات">Skills</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-group reveal">
+          <h3 class="skill-group-title">
+            <span class="skill-icon">💻</span>
+            <span data-en="Programming" data-ar="البرمجة">Programming</span>
+          </h3>
+          <div class="skill-pills">
+            <span class="pill">Python</span>
+            <span class="pill">Java</span>
+            <span class="pill">SQL</span>
+            <span class="pill">Swift</span>
+            <span class="pill">HTML/CSS</span>
+          </div>
+        </div>
+        <div class="skill-group reveal">
+          <h3 class="skill-group-title">
+            <span class="skill-icon">🤖</span>
+            <span data-en="AI & Data" data-ar="الذكاء الاصطناعي والبيانات">AI & Data</span>
+          </h3>
+          <div class="skill-pills">
+            <span class="pill">Machine Learning</span>
+            <span class="pill">Computer Vision</span>
+            <span class="pill">LLMs (OpenAI, Claude)</span>
+            <span class="pill">Predictive Modeling</span>
+            <span class="pill">Data Scraping</span>
+          </div>
+        </div>
+        <div class="skill-group reveal">
+          <h3 class="skill-group-title">
+            <span class="skill-icon">🤝</span>
+            <span data-en="Soft Skills" data-ar="المهارات الشخصية">Soft Skills</span>
+          </h3>
+          <div class="skill-pills">
+            <span class="pill" data-en="Research-to-Product" data-ar="من البحث للمنتج">Research-to-Product</span>
+            <span class="pill" data-en="Stakeholder Comm." data-ar="التواصل مع أصحاب المصلحة">Stakeholder Comm.</span>
+            <span class="pill" data-en="Problem-Solving" data-ar="حل المشكلات">Problem-Solving</span>
+            <span class="pill" data-en="Agile Teamwork" data-ar="العمل الرشيق">Agile Teamwork</span>
+          </div>
+        </div>
+        <div class="skill-group reveal">
+          <h3 class="skill-group-title">
+            <span class="skill-icon">🏅</span>
+            <span data-en="Certifications" data-ar="الشهادات">Certifications</span>
+          </h3>
+          <div class="cert-list">
+            <div class="cert-item">
+              <span class="cert-dot"></span>
+              <span data-en="AI Concepts & Advanced Applications – SDAIA" data-ar="مفاهيم الذكاء الاصطناعي والتطبيقات المتقدمة – SDAIA">AI Concepts & Advanced Applications – SDAIA</span>
+            </div>
+            <div class="cert-item">
+              <span class="cert-dot"></span>
+              <span data-en="Data Analysis Virtual Experience – stc & Misk" data-ar="تجربة تحليل البيانات الافتراضية – stc ومسك">Data Analysis Virtual Experience – stc & Misk</span>
+            </div>
+            <div class="cert-item">
+              <span class="cert-dot"></span>
+              <span data-en="Generative AI for Data Analytics – IBM" data-ar="الذكاء الاصطناعي التوليدي لتحليل البيانات – IBM">Generative AI for Data Analytics – IBM</span>
+            </div>
+            <div class="cert-item">
+              <span class="cert-dot"></span>
+              <span data-en="STEP English Test – 80/100" data-ar="اختبار ستيب للغة الإنجليزية – 80/100">STEP English Test – 80/100</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ──────────────────────── CONTACT ──────────────────────── -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-en="Reach Out" data-ar="تواصل">Reach Out</span>
+        <h2 class="section-title" data-en="Let's Connect" data-ar="لنتواصل">Let's Connect</h2>
+        <p class="section-subtitle" data-en="I'm open to new opportunities, collaborations, and interesting conversations." data-ar="أنا منفتح على الفرص الجديدة والتعاونات والمحادثات الشيقة.">
+          I'm open to new opportunities, collaborations, and interesting conversations.
+        </p>
+      </div>
+      <div class="contact-cards">
+        <a href="mailto:alsharef372@gmail.com" class="contact-card reveal" id="contact-email">
+          <div class="contact-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          </div>
+          <div>
+            <h3 data-en="Email" data-ar="البريد الإلكتروني">Email</h3>
+            <p>alsharef372@gmail.com</p>
+          </div>
+        </a>
+        <a href="https://linkedin.com/in/msalsharef" target="_blank" class="contact-card reveal" id="contact-linkedin">
+          <div class="contact-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </div>
+          <div>
+            <h3>LinkedIn</h3>
+            <p>linkedin.com/in/msalsharef</p>
+          </div>
+        </a>
+        <a href="tel:+966531821811" class="contact-card reveal" id="contact-phone">
+          <div class="contact-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.38 2 2 0 0 1 3.6 1.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.37a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </div>
+          <div>
+            <h3 data-en="Phone" data-ar="الهاتف">Phone</h3>
+            <p>+966 53 182 1811</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ──────────────────────── FOOTER ──────────────────────── -->
+  <footer class="footer">
+    <p data-en="© 2025 Mohammed Alsharef · Built with passion" data-ar="© 2025 محمد الشريف · صُنع بشغف">© 2025 Mohammed Alsharef · Built with passion</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
