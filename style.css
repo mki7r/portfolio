@@ -189,6 +189,32 @@ body.ar .nav-links a::after { transform-origin: right; }
 }
 .cert-link:hover { color: var(--accent); text-decoration: underline; }
 
+/* ── Certs Stack (standalone section) ── */
+.certs-stack {
+  display: flex; flex-direction: column; gap: 1rem;
+  max-width: 720px; margin: 0 auto;
+}
+.cert-card {
+  display: flex; align-items: center; gap: 1.2rem;
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 1.2rem 1.6rem;
+  transition: border-color .3s, transform .3s;
+}
+.cert-card:hover { border-color: rgba(108,99,255,.45); transform: translateX(4px); }
+body.ar .cert-card:hover { transform: translateX(-4px); }
+.cert-card-icon { font-size: 1.8rem; flex-shrink: 0; }
+.cert-card-body { flex: 1; display: flex; flex-direction: column; gap: .15rem; }
+.cert-card-name { font-size: .97rem; font-weight: 600; color: var(--text); }
+.cert-card-issuer { font-size: .82rem; color: var(--muted); }
+.cert-card-link {
+  font-size: .8rem; font-weight: 700; color: var(--primary2);
+  text-decoration: none; white-space: nowrap; flex-shrink: 0;
+  padding: .3rem .8rem; border-radius: 50px;
+  border: 1px solid rgba(108,99,255,.3);
+  transition: all .2s;
+}
+.cert-card-link:hover { background: rgba(108,99,255,.15); color: var(--accent); border-color: var(--accent); }
+
 .hero-social {
   display: flex; gap: 1rem; justify-content: center; margin-top: 2.5rem;
   animation: fadeUp .8s .5s ease both;
