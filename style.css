@@ -3,7 +3,7 @@
 
 :root {
   --bg: #080c14;
---.certs-grid {bg2: #0d1220;
+  --bg2: #0d1220;
   --surface: #131929;
   --surface2: #1a2236;
   --border: rgba(255,255,255,.07);
