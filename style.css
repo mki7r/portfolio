@@ -205,7 +205,12 @@ body.ar .cert-card:hover { transform: translateX(-4px); }
 .cert-card-icon { font-size: 1.8rem; flex-shrink: 0; }
 .cert-card-body { flex: 1; display: flex; flex-direction: column; gap: .15rem; }
 .cert-card-name { font-size: .97rem; font-weight: 600; color: var(--text); }
-.cert-card-issuer { font-size: .82rem; color: var(--muted); }
+.cert-card-issuer { 
+  font-size: .85rem; font-weight: 600; 
+  color: var(--accent); background: rgba(0,212,255,.1);
+  padding: .2rem .6rem; border-radius: 4px; 
+  align-self: flex-start; margin-top: .2rem;
+}
 .cert-card-link {
   font-size: .8rem; font-weight: 700; color: var(--primary2);
   text-decoration: none; white-space: nowrap; flex-shrink: 0;
